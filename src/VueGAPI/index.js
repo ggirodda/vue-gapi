@@ -10,6 +10,7 @@ const {
   isAuthenticated,
   getUserData,
   refreshToken,
+  refreshTokenOnce,
   isSignedIn,
   listenUserSignIn
 } = googleAuthService
@@ -99,6 +100,9 @@ export default {
       },
       refreshToken: () => {
         return Vue.prototype.$gapi.getGapiClient().then(refreshToken)
+      },
+      refreshTokenOnce: () => {
+        return Vue.prototype.$gapi.getGapiClient().then(refreshTokenOnce)
       },
       logout: (res) => {
         return Vue.prototype.$gapi.getGapiClient().then(() => {

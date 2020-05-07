@@ -138,5 +138,8 @@
     "type": "git",
     "url": "git+https://github.com/CedricPoilly/vue-gapi.git"
   },
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "dependencies": {
+    "async-wait-until": "^1.2.4"
+  }
 }
